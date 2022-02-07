@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="RxInstaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kxT-FF-lhC">
+                                <rect key="frame" x="57" y="104" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="AgB-6z-scB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード(6文字以上)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KId-zB-BNf">
+                                <rect key="frame" x="57" y="158" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="aFe-0y-2r3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ユーザー名(アカウント作成時に設定)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GUa-gH-BNf">
+                                <rect key="frame" x="57" y="212" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Gm8-sA-48y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UR5-Da-P3b">
+                                <rect key="frame" x="57" y="266" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="DJB-Vb-HaC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ログイン"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-ev-L6e">
+                                <rect key="frame" x="57" y="317" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="LOU-K6-bCB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="アカウント作成"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GUa-gH-BNf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="2bO-Hq-AZ2"/>
+                            <constraint firstItem="dSe-ev-L6e" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3aF-8c-dOW"/>
+                            <constraint firstItem="KId-zB-BNf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="45c-Uj-acB"/>
+                            <constraint firstItem="KId-zB-BNf" firstAttribute="top" secondItem="kxT-FF-lhC" secondAttribute="bottom" constant="20" id="7wE-jh-nWm"/>
+                            <constraint firstItem="UR5-Da-P3b" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BaB-dp-1H9"/>
+                            <constraint firstItem="UR5-Da-P3b" firstAttribute="top" secondItem="GUa-gH-BNf" secondAttribute="bottom" constant="20" id="SjU-gC-s34"/>
+                            <constraint firstItem="kxT-FF-lhC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bQd-hi-1SI"/>
+                            <constraint firstItem="dSe-ev-L6e" firstAttribute="top" secondItem="UR5-Da-P3b" secondAttribute="bottom" constant="20" id="jLC-Gs-JZ1"/>
+                            <constraint firstItem="kxT-FF-lhC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="x1I-Wi-Jtm"/>
+                            <constraint firstItem="GUa-gH-BNf" firstAttribute="top" secondItem="KId-zB-BNf" secondAttribute="bottom" constant="20" id="zbQ-3h-KWd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createAccountButton" destination="dSe-ev-L6e" id="NM1-ZT-I7F"/>
+                        <outlet property="displayNameTextField" destination="GUa-gH-BNf" id="fON-p0-Q4f"/>
+                        <outlet property="loginButton" destination="UR5-Da-P3b" id="4KO-cz-icY"/>
+                        <outlet property="mailAddressTextField" destination="kxT-FF-lhC" id="QIA-hP-Whz"/>
+                        <outlet property="passwordTextField" destination="KId-zB-BNf" id="261-NA-aZl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

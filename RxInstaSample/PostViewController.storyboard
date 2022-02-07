@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PostViewController" customModule="RxInstaSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aHE-bW-d1g">
+                                <rect key="frame" x="57" y="54" width="300" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Nr3-1S-r4i"/>
+                                    <constraint firstAttribute="width" constant="300" id="RPb-lj-mrI"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="写真のタイトル" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OH2-ze-asU">
+                                <rect key="frame" x="57" y="184" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="v9w-MI-gaK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qx-93-cEk">
+                                <rect key="frame" x="57" y="228" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7Rz-1x-kLZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="投稿"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh9-Gx-y3a">
+                                <rect key="frame" x="57" y="269" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="I2C-J0-AJf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="キャンセル"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aHE-bW-d1g" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5vr-oP-Ydg"/>
+                            <constraint firstItem="wh9-Gx-y3a" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7o1-FQ-4I0"/>
+                            <constraint firstItem="wh9-Gx-y3a" firstAttribute="top" secondItem="7Qx-93-cEk" secondAttribute="bottom" constant="10" id="EEm-E4-JZr"/>
+                            <constraint firstItem="OH2-ze-asU" firstAttribute="top" secondItem="aHE-bW-d1g" secondAttribute="bottom" constant="10" id="HuP-ss-0v7"/>
+                            <constraint firstItem="7Qx-93-cEk" firstAttribute="top" secondItem="OH2-ze-asU" secondAttribute="bottom" constant="10" id="Nh3-tU-cz3"/>
+                            <constraint firstItem="7Qx-93-cEk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="X0W-os-NkG"/>
+                            <constraint firstItem="OH2-ze-asU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Xhh-7d-I6y"/>
+                            <constraint firstItem="aHE-bW-d1g" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="iqC-Rg-RuQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="wh9-Gx-y3a" id="Agb-f9-Rd7"/>
+                        <outlet property="imageView" destination="aHE-bW-d1g" id="dVi-8N-Q7i"/>
+                        <outlet property="postButton" destination="7Qx-93-cEk" id="AUj-R6-R3Y"/>
+                        <outlet property="textField" destination="OH2-ze-asU" id="pCM-On-IR1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,7 +7,20 @@
 		<key>RxInstaSample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>31</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>39CB087F27ABDA820070AD53</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39CB089D27ABDC740070AD53</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
